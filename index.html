@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tatuapé Conceito | Convertr</title>
+    <link rel="icon" href="assets/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-infos">
+        <p>Compre em até 6x sem juros</p>
+        <p class="header-infos-mobile-none">|</p>
+        <p class="header-infos-mobile-none">Frete grátis em compras acima de R$600</p>
+        <p class="header-infos-mobile-none">|</p>
+        <p class="header-infos-mobile-none">Compre marcas exclusivas com segurança</p>
+    </div>
+    <div class="divider"></div>
+    <div class="search-area">
+        <div class="hamburger" id="hamburger">
+            <img src="assets/header/hamburguerMenu.svg" alt="Menu" class="hamburger-icon">
+        </div>
+        <div class="heart-mobile">
+            <img src="assets/header/heartImage.svg" alt="Coração" class="icon">
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="BUSCAR" class="search-input">
+            <button class="search-button">
+                <img src="assets/header/searchImage.svg" alt="Buscar" class="searchIcon">
+            </button>
+        </div>
+        <div class="logo-container">
+            <img src="assets/logo.svg" alt="Logo" class="logo">
+        </div>
+        <div class="icon-container">
+            <img src="assets/header/heartImage.svg" alt="Coração" class="icon heart-icon">
+            <img src="assets/header/userImage.svg" alt="Usuário" class="icon">
+            <img src="assets/header/cartImage.svg" alt="Carrinho" class="icon">
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="menu">
+        <ul class="menu-list" id="menu-list">
+            <li class="menu-item">
+                <h4>
+                    TODA A LOJA 
+                    <img src="assets/header/hamburguerMenu.svg" alt="Menu" class="hamburger-icon-all-store">
+                </h4>
+            </li>
+            <li class="menu-item"><h4>ROUPAS</h4></li>
+            <li class="menu-item"><h4>CALÇADOS</h4></li>
+            <li class="menu-item"><h4>ACESSÓRIOS</h4></li>
+            <li class="menu-item"><h4>PERFUMES</h4></li>
+            <li class="menu-item"><h4>MARCAS</h4></li>
+            <li class="menu-item"><h4>INFANTIL</h4></li>
+        </ul>
+    </div>
+    <div class="search-mobile-container">
+        <p>BUSCA</p>
+        <input type="text" placeholder="EX. CAMISETA" class="search-input-mobile">
+        <img src="assets/header/searchBlack.svg" alt="Busca">
+    </div>
+  </header>
+  <section>
+    <div class="banner">
+        <div class="banner-content">
+            <div class="banner-text-content">
+                <div class="banner-logo-container">
+                    <img src="assets/logoBlack.png" alt="logo"> 
+                    <img src="assets/banner/divider.png"> 
+                    <img src="assets/banner/emporioLogo.png" alt="Emporio logo"> 
+                </div>
+                <h1>NOVIDADES</h1>
+                <p>RELÓGIO PULSO <strong>EMPORIO ARMANI BLACK</strong></p>
+                <button class="buttonSlider">COMPRE AGORA</button>
+            </div>
+            <div class="image-content">
+                <img src="assets/banner/clockGreen.png" alt="Relógio"> 
+            </div>
+        </div>
+    </div>
+  </section>
+  <section>
+    <div class="categories-section">
+        <h2>Compre por Categoria</h2>
+        <div class="categories-slider-wrapper">
+            <div class="categories-slider">
+                <button class="slider-nav left" onclick="slideLeft()"><</button>
+                <button class="slider-nav right" onclick="slideRight()">></button>
+                <div>
+                    <div class="categories-slider-item">
+                        <div class="categories-image-container">
+                            <img src="assets/categories/roupasImage.png" alt="Roupas">
+                            <button class="buttonBuyNow">COMPRE AGORA</button>
+                        </div>
+                        <p class="categories-text"><u><strong>Roupas</strong></u></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="categories-slider-item">
+                        <div class="categories-image-container">
+                            <img src="assets/categories/perfumesImage.png" alt="Perfumes">
+                            <button class="buttonBuyNow">COMPRE AGORA</button>
+                        </div>
+                        <p class="categories-text"><u><strong>Perfumes</strong></u></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="categories-slider-item">
+                        <div class="categories-image-container">
+                            <img src="assets/categories/calcadosImage.png" alt="Calçados">
+                            <button class="buttonBuyNow">COMPRE AGORA</button>
+                        </div>
+                        <p class="categories-text"><u><strong>Calçados</strong></u></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="categories-slider-item">
+                        <div class="categories-image-container">
+                            <img src="assets/categories/roupasImage.png" alt="Acessórios">
+                            <button class="buttonBuyNow">COMPRE AGORA</button>
+                        </div>
+                        <p class="categories-text"><u><strong>Acessórios</strong></u></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+ <section>
+    <div class="brand-container">
+        <img src="assets/brands.png" alt="Marcas">
+    </div>
+ </section>
+ <section>
+    <div class="lacoste-container-mobile">
+        <div class="banner-text-content">
+            <div class="banner-logo-container">
+                <img src="assets/logoBlack.png" alt="logo"> 
+                <img src="assets/banner/divider.png"> 
+                <img src="assets/lacoste/lacosteLogo.png" alt="lacoste logo"> 
+            </div>
+            <h1>Lacoste Active Rwy</h1>
+            <p>Conheça a linha Lacoste Active Rwy na Tatuapé Conceito</p>
+            <button class="buttonSlider">COMPRE AGORA</button>
+        </div>
+    </div>
+    <div class="lacoste-section">
+        <div class="lacoste-container">
+            <div class="banner-text-content">
+                <div class="banner-logo-container">
+                    <img src="assets/logoBlack.png" alt="logo"> 
+                    <img src="assets/banner/divider.png"> 
+                    <img src="assets/lacoste/lacosteLogo.png" alt="lacoste logo"> 
+                </div>
+                <h1>Lacoste Active Rwy</h1>
+                <p>Conheça a linha Lacoste Active Rwy na Tatuapé Conceito</p>
+                <button class="buttonSlider">COMPRE AGORA</button>
+            </div>
+        </div>
+    </div>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
