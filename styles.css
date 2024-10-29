@@ -3,6 +3,8 @@
     --color-white: #FFFF;
     --color-gray-01: #333;
     --color-gray-02: #AAA;
+    --color-gray-03: #6e6d6d;
+    --color-green-01: #48b48a;
 }
 
 * {
@@ -217,13 +219,33 @@ body {
     padding-bottom: 2rem;
 }
 
+.recommended-section {
+    padding-left: 10rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 .categories-slider-wrapper {
     position: relative;
     overflow: visible;
     max-width: 100%;
 }
 
+.recommended-slider-wrapper {
+    position: relative;
+    overflow: visible;
+    max-width: 100%;
+}
+
 .categories-slider {
+    display: flex;
+    gap: 40px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.recommended-slider {
     display: flex;
     gap: 40px;
     scroll-behavior: smooth;
@@ -252,6 +274,27 @@ body {
     right: 25px;
 }
 
+.recommended-nav {
+    position: absolute;
+    top: 50%;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+
+.recommended-nav.left {
+    left: -25px;
+}
+
+.recommended-nav.right {
+    right: 25px;
+}
+
 .categories-slider-item {
     position: relative;
 }
@@ -268,6 +311,24 @@ body {
 .categories-image-container:hover img {
     transform: scale(1.1);
 }
+
+.recommended-slider-item {
+    position: relative;
+}
+
+.recommended-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image img {
+    transition: transform 0.3s ease;
+}
+
+.product-image:hover img {
+    transform: scale(1.1);
+}
+
 
 .buttonBuyNow {
     color: var(--color-white);
@@ -321,6 +382,99 @@ body {
 
 .lacoste-container-mobile {
     display: none
+}
+
+.products-text {
+    color: var(--color-gray-03);
+    margin-bottom: 0px;
+}
+
+.products-texts-container {
+   display: flex;
+   flex-direction: column;
+}
+
+.products-texts-container > * {
+    margin-bottom: -15px;
+}
+
+.products-price-cut {
+    text-decoration: line-through;
+}
+
+.products-pix-price {
+    color: var(--color-green-01)
+}
+
+.products-prices {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 1px;
+}
+
+.products-price-text {
+    color: var(--color-black);
+}
+
+.products-small-texts {
+    font-size: 12px;
+    color: var(--color-gray-03);
+}
+
+.installment-price-container {
+    padding-top: 8px;
+}
+
+.tag-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1;
+}
+
+.like-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1;
+}
+
+.like-button {
+    background: none;
+    border: none;
+    padding: 0;   
+    cursor: pointer;
+    margin: 0;     
+}
+
+.tag {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 5px 10px;
+    border-radius: 1px;
+    font-size: 12px;
+}
+
+.launch-tag {
+    background-color: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: var(--color-gray-02);
+    cursor: pointer;
+}
+
+.discount-tag {
+    background-color: var(--color-green-01);
+    cursor: pointer;
 }
 
 @media (max-width: 1700px) {
@@ -396,11 +550,17 @@ body {
         padding-top: 0;
     }
 
+    .recommended-section {
+        padding-left: 3rem;
+        padding-top: 0;
+    }
+
     .brand-container {
         display: inline-block;
         overflow-x: auto;
         scroll-behavior: smooth;
         width: 100vw;
+        margin-bottom: 0;
     }
     
     .brand-container img {
