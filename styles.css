@@ -4,6 +4,7 @@
     --color-gray-01: #333;
     --color-gray-02: #AAA;
     --color-gray-03: #6e6d6d;
+    --color-gray-04: #F0EFED;
     --color-green-01: #48b48a;
 }
 
@@ -477,6 +478,43 @@ body {
     cursor: pointer;
 }
 
+.sneakers-shop-section {
+    display: flex;
+    height: 500px; 
+}
+
+.sneakers-shop-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.sneakers-shop-content p{
+    font-size: 17px;
+}
+
+.sneakers-left-side {
+    flex: 1;
+    background-image: url('assets/sneakers-shop/sneakersShopFirstBackground.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-black)
+}
+
+.sneakers-right-side {
+    flex: 1;
+    background-image: url('assets/sneakers-shop/sneakersShopSecondBackground.png');
+    background-size: cover;
+}
+
+.sneakers-text-content-mobile {
+    display: none;
+}
+
 @media (max-width: 1700px) {
     .banner-content {
         padding-right: 3rem;
@@ -509,6 +547,31 @@ body {
 }
 
 @media (max-width: 900px) {
+
+    .sneakers-shop-section {
+        display: none;
+    }
+
+    .sneakers-text-content-mobile {
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+    }
+    
+    .sneakers-up-side {
+        flex: 1;
+        background-image: url('assets/sneakers-shop/sneakersShopSecondBackground.png');
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .sneakers-down-side {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 30px;
+    }
 
     .lacoste-section {
         background-image: url('assets/lacoste/lacosteShoeMobile.png');
