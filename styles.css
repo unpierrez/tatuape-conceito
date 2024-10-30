@@ -254,6 +254,22 @@ body {
     scrollbar-width: none;
 }
 
+.glasses-slider {
+    display: flex;
+    gap: 40px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.perfume-slider {
+    display: flex;
+    gap: 40px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
 .slider-nav {
     position: absolute;
     top: 50%;
@@ -296,6 +312,48 @@ body {
     right: 25px;
 }
 
+.glasses-nav {
+    position: absolute;
+    top: 50%;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+
+.glasses-nav.left {
+    left: -25px;
+}
+
+.glasses-nav.right {
+    right: 25px;
+}
+
+.perfume-nav {
+    position: absolute;
+    top: 50%;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+
+.perfume-nav.left {
+    left: -25px;
+}
+
+.perfume-nav.right {
+    right: 25px;
+}
+
 .categories-slider-item {
     position: relative;
 }
@@ -319,6 +377,13 @@ body {
 
 .recommended-image-container {
     position: relative;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.glasses-image-container {
+    position: relative;
+    max-height: 400px;
     overflow: hidden;
 }
 
