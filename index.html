@@ -29,10 +29,12 @@
             <img src="assets/header/heartImage.svg" alt="Coração" class="icon">
         </div>
         <div class="search-container">
-            <input type="text" placeholder="BUSCAR" class="search-input">
-            <button class="search-button">
-                <img src="assets/header/searchImage.svg" alt="Buscar" class="searchIcon">
-            </button>
+            <form>
+                <input type="text" placeholder="BUSCAR" class="search-input">
+                <button class="search-button">
+                    <img src="assets/header/searchImage.svg" alt="Buscar" class="searchIcon">
+                </button>
+            </form>
         </div>
         <div class="logo-container">
             <img src="assets/logo.svg" alt="Logo" class="logo">
@@ -60,11 +62,13 @@
             <li class="menu-item"><h4>INFANTIL</h4></li>
         </ul>
     </div>
-    <div class="search-mobile-container">
+    <form class="search-mobile-container">
         <p>BUSCA</p>
         <input type="text" placeholder="EX. CAMISETA" class="search-input-mobile">
-        <img src="assets/header/searchBlack.svg" alt="Busca">
-    </div>
+        <button class="search-button">
+            <img src="assets/header/searchBlack.svg" alt="Busca">
+        </button>
+    </form>
   </header>
   <section>
     <div class="banner">
@@ -392,7 +396,6 @@
                             <div class="product-image">
                                 <img  src="assets/glasses-product/glasses01.png"alt="Itens">
                             </div>
-                            <button class="buttonBuyNow">COMPRE AGORA</button>
                         </div>
                         <div>
                             <div class="products-texts-container">
@@ -424,7 +427,6 @@
                                   <img src="assets/products-sliders/likeIcon.png" />
                                 </button>  
                               </div>
-                            <button class="buttonBuyNow">COMPRE AGORA</button>
                         </div>
                         <div>
                             <div class="products-texts-container">
@@ -456,7 +458,6 @@
                                   <img src="assets/products-sliders/likeIcon.png" />
                                 </button>  
                               </div>
-                            <button class="buttonBuyNow">COMPRE AGORA</button>
                         </div>
                         <div>
                             <div class="products-texts-container">
@@ -488,7 +489,6 @@
                                   <img src="assets/products-sliders/likeIcon.png" />
                                 </button>  
                               </div>
-                            <button class="buttonBuyNow">COMPRE AGORA</button>
                         </div>
                         <div>
                             <div class="products-texts-container">
@@ -520,7 +520,6 @@
                                   <img src="assets/products-sliders/likeIcon.png" />
                                 </button>  
                               </div>
-                            <button class="buttonBuyNow">COMPRE AGORA</button>
                         </div>
                         <div>
                             <div class="products-texts-container">
@@ -563,7 +562,6 @@
                             <div class="product-image">
                                 <img  src="assets/perfume-product/perfume01.png"alt="Itens">
                             </div>
-                            <button class="buttonBuyNow">COMPRE AGORA</button>
                         </div>
                         <div>
                             <div class="products-texts-container">
@@ -595,7 +593,6 @@
                                   <img src="assets/products-sliders/likeIcon.png" />
                                 </button>  
                               </div>
-                            <button class="buttonBuyNow">COMPRE AGORA</button>
                         </div>
                         <div>
                             <div class="products-texts-container">
@@ -627,7 +624,6 @@
                                   <img src="assets/products-sliders/likeIcon.png" />
                                 </button>  
                               </div>
-                            <button class="buttonBuyNow">COMPRE AGORA</button>
                         </div>
                         <div>
                             <div class="products-texts-container">
@@ -659,7 +655,6 @@
                                   <img src="assets/products-sliders/likeIcon.png" />
                                 </button>  
                               </div>
-                            <button class="buttonBuyNow">COMPRE AGORA</button>
                         </div>
                         <div>
                             <div class="products-texts-container">
@@ -691,7 +686,6 @@
                                   <img src="assets/products-sliders/likeIcon.png" />
                                 </button>  
                               </div>
-                            <button class="buttonBuyNow">COMPRE AGORA</button>
                         </div>
                         <div>
                             <div class="products-texts-container">
@@ -716,6 +710,248 @@
         </div>
     </div>
  </section>
+ <section>
+    <div class="accessories-section">
+        <div class="acessories-title-container">
+            <h1>Acessórios <br class="breakLine">para completar<br class="breakLine"> o look</h1>
+        </div>
+        <div class="acessories-slide-container">
+            <div class="recommended-slider-wrapper">
+                <div class="acessories-slider">
+                    <button class="acessories-nav left" onclick="slideLeft()"><</button>
+                    <button class="acessories-nav right" onclick="slideRight()">></button>
+                    <div>
+                        <div class="recommended-slider-item">
+                            <div class="glasses-image-container">
+                                <div class="like-container">
+                                  <button class="like-button">
+                                    <img src="assets/products-sliders/likeIcon.png" />
+                                  </button>  
+                                </div>
+                                <div class="product-image">
+                                    <img src="assets/acessories-product/acessories01.png" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="products-texts-container">
+                                    <p class="products-text">Lorem ipsum dolor sit amet</p>
+                                    <div class="products-prices">
+                                        <p class="acessories-price-text"><strong>R$ 249,00</strong></p>
+                                        <p class="products-text products-price-cut">R$ 369,00</p>
+                                        <div class="installment-price-container">
+                                            <p class="products-small-texts">3x R$ 99,00</p>
+                                        </div>
+                                    </div>
+                                    <div class="products-prices">
+                                        <p class="products-pix-price"><strong>R$ 229,90</strong></p>
+                                        <p>no PIX</p>
+                                    </div>
+                                </div>
+                               <p class="products-small-texts"> + 19 cores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recommended-slider-item">
+                            <div class="glasses-image-container">
+                                <div class="product-image">
+                                    <img src="assets/acessories-product/acessories02.png" />
+                                </div>
+                                <div class="like-container">
+                                    <button class="like-button">
+                                      <img src="assets/products-sliders/likeIcon.png" />
+                                    </button>  
+                                  </div>
+                            </div>
+                            <div>
+                                <div class="products-texts-container">
+                                    <p class="products-text">Lorem ipsum dolor sit amet</p>
+                                    <div class="products-prices">
+                                        <p class="acessories-price-text"><strong>R$ 249,00</strong></p>
+                                        <p class="products-text products-price-cut">R$ 369,00</p>
+                                        <div class="installment-price-container">
+                                            <p class="products-small-texts">3x R$ 99,00</p>
+                                        </div>
+                                    </div>
+                                    <div class="products-prices">
+                                        <p class="products-pix-price"><strong>R$ 229,90</strong></p>
+                                        <p>no PIX</p>
+                                    </div>
+                                </div>
+                               <p class="products-small-texts"> + 19 cores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recommended-slider-item">
+                            <div class="glasses-image-container">
+                                <div  class="product-image">
+                                    <img src="assets/acessories-product/acessories01.png" />
+                                </div>
+                                <div class="like-container">
+                                    <button class="like-button">
+                                      <img src="assets/products-sliders/likeIcon.png" />
+                                    </button>  
+                                  </div>
+                            </div>
+                            <div>
+                                <div class="products-texts-container">
+                                    <p class="products-text">Lorem ipsum dolor sit amet</p>
+                                    <div class="products-prices">
+                                        <p class="acessories-price-text"><strong>R$ 249,00</strong></p>
+                                        <p class="products-text products-price-cut">R$ 369,00</p>
+                                        <div class="installment-price-container">
+                                            <p class="products-small-texts">3x R$ 99,00</p>
+                                        </div>
+                                    </div>
+                                    <div class="products-prices">
+                                        <p class="products-pix-price"><strong>R$ 229,90</strong></p>
+                                        <p>no PIX</p>
+                                    </div>
+                                </div>
+                               <p class="products-small-texts"> + 19 cores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recommended-slider-item">
+                            <div class="glasses-image-container">
+                                <div class="product-image">
+                                    <img src="assets/acessories-product/acessories02.png" />
+                                </div>
+                                <div class="like-container">
+                                    <button class="like-button">
+                                      <img src="assets/products-sliders/likeIcon.png" />
+                                    </button>  
+                                  </div>
+                            </div>
+                            <div>
+                                <div class="products-texts-container">
+                                    <p class="products-text">Lorem ipsum dolor sit amet</p>
+                                    <div class="products-prices">
+                                        <p class="acessories-price-text"><strong>R$ 249,00</strong></p>
+                                        <p class="products-text products-price-cut">R$ 369,00</p>
+                                        <div class="installment-price-container">
+                                            <p class="products-small-texts">3x R$ 99,00</p>
+                                        </div>
+                                    </div>
+                                    <div class="products-prices">
+                                        <p class="products-pix-price"><strong>R$ 229,90</strong></p>
+                                        <p>no PIX</p>
+                                    </div>
+                                </div>
+                               <p class="products-small-texts"> + 19 cores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="recommended-slider-item">
+                            <div class="glasses-image-container">
+                                <div class="product-image">
+                                 <img src="assets/acessories-product/acessories01.png" />
+                                </div>
+                                <div class="like-container">
+                                    <button class="like-button">
+                                      <img src="assets/products-sliders/likeIcon.png" />
+                                    </button>  
+                                  </div>
+                            </div>
+                            <div>
+                                <div class="products-texts-container">
+                                    <p class="products-text">Lorem ipsum dolor sit amet</p>
+                                    <div class="products-prices">
+                                        <p class="acessories-price-text"><strong>R$ 249,00</strong></p>
+                                        <p class="products-text products-price-cut">R$ 369,00</p>
+                                        <div class="installment-price-container">
+                                            <p class="products-small-texts">3x R$ 99,00</p>
+                                        </div>
+                                    </div>
+                                    <div class="products-prices">
+                                        <p class="products-pix-price"><strong>R$ 229,90</strong></p>
+                                        <p>no PIX</p>
+                                    </div>
+                                </div>
+                               <p class="products-small-texts"> + 19 cores</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+ <section>
+    <div class="tatuape-conceito-section">
+        <div class="tatuape-logo-container">
+            <img class="tatuape-logo" src="assets/tatuapeLogo.png">
+
+            <p>Bem-vindo ao universo Tatuapé Conceito, onde estilo e qualidade se unem para criar uma experiência única de moda.</p>
+    
+            <p>A Tatuapé Conceito é mais do que apenas roupas; é uma expressão de personalidade, elegância e conforto. Com uma linha completa de produtos,
+                incluindo polos, camisetas, camisas, calças, bermudas & shorts, jaquetas e casacos.</p>
+        </div>
+    </div>
+ </section>
+ <section>
+    <div class="newsletter-section">
+        <form class="newsletter-form">
+            <h1>ASSINE NOSSA NEWSLETTER</h1>
+            <input class="newsletter-input" placeholder="Nome:">
+            <input class="newsletter-input" placeholder="E-mail:">
+            <label class="checkbox-container">
+                <input class="custom-checkbox" type="checkbox" name="emailPromotion" value="emailPromotion">
+               Aceito receber promoções por e-mail
+            </label>
+            <button class="newsletter-button"><strong>ASSINAR</strong></button>
+        </form>
+    </div>
+ </section>
+ <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Fale Conosco</h3>
+            <ul>
+                <li><a href="#">Whatsapp (11) 93447-8717</a></li>
+                <p>Fixo</p>
+                <li><a href="#">2296-6763 (Loja física)</a></li>
+                <li><a href="#">2942-9950 (Escritório)</a></li>
+
+                <p>E-mail</p>
+                <li><a href="mailto:vendasonline@tatuapeconceito.com.br">vendasonline@tatuapeconceito.com.br</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Tatuapé Conceito</h3>
+            <ul>
+                <li><a href="#">Nossa História</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos e Condições</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Informações</h3>
+            <ul>
+                <li><a href="#">Troca e Devoluções</a></li>
+                <li><a href="#">Dúvidas Frequentes</a></li>
+                <li><a href="#">Vendas Assistidas</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Endereço</h3>
+            <p>R. Tuiuti, 2636 - Tatuapé - São Paulo / SP 03307-005</p>
+            <p>Horário de funcionamento - Loja física Segunda a Sábado das 10h às 20h</p>
+        </div>
+        <div class="footer-column">
+            <h3>Pagamento</h3>
+            <div class="payment-icons">
+                <img src="assets/footer/paymentIcons.png" />
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2023 - <strong>TATUAPÉ CONCEITO</strong> COMERCIO DE ROUPAS E ACESSORIOS LTDA CNPJ: 17.521.536/0001-55</p>
+    </div>
+</footer>
   <script src="main.js"></script>
 </body>
 </html>

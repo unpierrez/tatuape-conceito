@@ -1,6 +1,7 @@
 :root {
     --color-black: black;
     --color-white: #FFFF;
+    --color-off-white: #F5F3F4;
     --color-gray-01: #333;
     --color-gray-02: #AAA;
     --color-gray-03: #6e6d6d;
@@ -270,6 +271,14 @@ body {
     scrollbar-width: none;
 }
 
+.acessories-slider {
+    display: flex;
+    gap: 40px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
 .slider-nav {
     position: absolute;
     top: 50%;
@@ -354,6 +363,27 @@ body {
     right: 25px;
 }
 
+.acessories-nav {
+    position: absolute;
+    top: 35%;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+
+.acessories-nav.left {
+    left: 25px;
+}
+
+.acessories-nav.right {
+    right: 25px;
+}
+
 .categories-slider-item {
     position: relative;
 }
@@ -379,12 +409,14 @@ body {
     position: relative;
     max-height: 500px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .glasses-image-container {
     position: relative;
     max-height: 400px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .product-image img {
@@ -453,6 +485,11 @@ body {
 .products-text {
     color: var(--color-gray-03);
     margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.acessories-price-text {
+    color: var(--color-white);
 }
 
 .products-texts-container {
@@ -466,6 +503,7 @@ body {
 
 .products-price-cut {
     text-decoration: line-through;
+    cursor:auto;
 }
 
 .products-pix-price {
@@ -580,6 +618,183 @@ body {
     display: none;
 }
 
+.accessories-section {
+    height: 800px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.accessories-section h1 {
+    font-size: 3rem;
+}
+
+.acessories-title-container {
+    flex: 1;
+    max-width: 40%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acessories-slide-container {
+    flex: 2;
+    padding: 20px;
+    max-width: 60%;
+}
+
+.tatuape-conceito-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.tatuape-logo {
+    padding-bottom: 20px;
+}
+
+.tatuape-conceito-section p {
+    color: var(--color-gray-03);
+    font-size: 15px;
+}
+
+.tatuape-logo-container {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.newsletter-section {
+    height: 400px;
+    display: flex;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--color-gray-02);
+    color: white;
+    font-size: 16px;
+    width: 600px;
+    padding: 10px 0;
+    margin: 15px 0;
+    text-align: center;
+    outline: none;
+}
+
+.custom-checkbox {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    color: var(--color-gray-03);
+    font-size: 14px;
+    cursor: pointer;
+    padding-bottom: 25px;
+}
+
+.newsletter-button {
+    width: 130px;
+    padding: 10px;
+}
+
+/* --- footer ---*/
+
+.footer {
+    background-color: var(--color-off-white);
+    color: var(--color-black);
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 10px;
+    padding-right: 50px;
+    width: 30px;
+}
+
+
+.footer-column h3 {
+    margin-top: 0;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-bottom p {
+    font-size: 10px;
+}
+
+.footer-decoration-text  {
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+.footer-column a {
+    color: var(--color-gray-03);
+    text-decoration: none;
+}
+
+.footer-column p {
+    color: var(--color-gray-03);
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+   padding-bottom: 30px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.payment-icons {
+    width: 30px;
+}
+
 @media (max-width: 1700px) {
     .banner-content {
         padding-right: 3rem;
@@ -612,6 +827,41 @@ body {
 }
 
 @media (max-width: 900px) {
+
+    .newsletter-input {
+        width: 350px;
+    }
+
+    .tatuape-logo-container {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .accessories-section {
+        display: flex;
+        flex-direction: column;
+        height: 650px;
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+    .acessories-title-container{
+        padding-left: 10px;
+        max-width: 95%;
+    }
+
+    .breakLine {
+        display: none;
+    }
+
+    .acessories-slide-container {
+        padding: 1px;
+        max-width: 90%;
+    }
+
+    .accessories-section h1 {
+        font-size: 21px;
+    }
 
     .sneakers-shop-section {
         display: none;
