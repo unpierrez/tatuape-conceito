@@ -828,6 +828,26 @@ body {
 
 @media (max-width: 900px) {
 
+    .footer-container {
+        flex-direction: column; 
+        align-items: center; 
+        padding-left: 20px;
+    }
+
+    .footer-column {
+        width: 100%; 
+        padding: 10px 0; 
+
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+
+    .payment-icons {
+        width: 50px;
+    }
+
     .newsletter-input {
         width: 350px;
     }
