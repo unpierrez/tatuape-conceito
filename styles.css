@@ -840,6 +840,11 @@ body {
 
     }
 
+    .footer-bottom {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
     .footer-bottom p {
         font-size: 12px;
     }
