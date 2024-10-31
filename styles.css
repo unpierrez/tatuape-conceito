@@ -725,8 +725,6 @@ body {
     padding: 10px;
 }
 
-/* --- footer ---*/
-
 .footer {
     background-color: var(--color-off-white);
     color: var(--color-black);
@@ -783,7 +781,7 @@ body {
 }
 
 .footer-bottom {
-    text-align: center;
+   text-align: center;
    padding-bottom: 30px;
 }
 
@@ -793,6 +791,48 @@ body {
 
 .payment-icons {
     width: 30px;
+}
+
+.collab-section {
+    display: flex;
+    height: 600px;
+}
+
+.collab-left-side {
+    flex: 1;
+    background-image: url('assets/collab-mc-daniel/mcDaniel.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.collab-right-side {
+    flex: 1; 
+    background-color: var(--color-off-white);
+}
+
+.collab-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-right: 16rem;
+    padding-left: 16rem;
+    padding-top: 13rem;
+}
+
+.collab-content h1,
+.collab-content p {
+    margin: 0;
+    padding: 0;
+}
+
+.collab-content h1 {
+    font-size: 3rem;
+}
+
+.collab-mobile {
+    display: none;
 }
 
 @media (max-width: 1700px) {
@@ -827,6 +867,48 @@ body {
 }
 
 @media (max-width: 900px) {
+
+    .collab-image-mobile {
+        flex: 1;
+        background-image: url('assets/collab-mc-daniel/mcDaniel.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .collab-mobile {
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+    }
+
+    .collab-content-mobile {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .collab-content-mobile h1,
+    .collab-content-mobile p {
+            margin: 0;
+            padding: 0;
+        }
+
+    .collab-content-mobile h1 {
+            font-size: 3rem;
+        }
+
+    .collab-left-side  {
+        display: none;
+    }
+
+    .collab-right-side {
+        display: none;
+    }
 
     .footer-container {
         flex-direction: column; 
